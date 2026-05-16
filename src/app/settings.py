@@ -3,7 +3,7 @@ import os
 from pydantic_settings import BaseSettings
 
 
-class Settigns(BaseSettings):
+class Settings(BaseSettings):
     openai_api_key: str
 
     class Config:
@@ -17,6 +17,6 @@ class Settigns(BaseSettings):
 
 
 # Instantiate settings
-settings = Settigns()
+settings = Settings()
 print(settings.openai_api_key)
 print(settings.cwd)
