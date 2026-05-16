@@ -12,5 +12,8 @@ dependencies = [
     "requests",
     "fastapi",
     "uvicorn",
-    "pydantic_settings"
+    "pydantic_settings",
 ]
+
+[tool.black]
+line-length = 120

@@ -8,6 +8,7 @@
             "name": "Python Debugger: Current File",
             "type": "debugpy",
             "request": "launch",
+            "cwd": "${workspaceFolder}/src/app",
             "program": "${file}",
             "console": "integratedTerminal"
         }
