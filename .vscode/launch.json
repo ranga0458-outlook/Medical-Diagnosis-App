@@ -8,9 +8,20 @@
             "name": "Python Debugger: Current File",
             "type": "debugpy",
             "request": "launch",
-            "cwd": "${workspaceFolder}/src/app",
+            "cwd": "${workspaceFolder}",
             "program": "${file}",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Run diagnosis_mcp.py",
+            "type": "debugpy",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/diagnosis_mcp.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
         }
     ]
 }
